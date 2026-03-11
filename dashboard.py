@@ -1,5 +1,5 @@
 import streamlit as st
-
+from garak_api import get_garak_price
 st.set_page_config(
     page_title="Foresttree 통합 대시보드",
     page_icon="📊",
@@ -73,3 +73,4 @@ elif menu == "플랫폼 가격 비교":
     st.header("플랫폼 가격 비교")
     st.write("여기에 플랫폼 가격 비교 내용을 표시합니다.")
     st.success("스마트스토어 / 쿠팡 / 기타 플랫폼 비교 테이블을 붙일 수 있습니다.")
+
